@@ -33,6 +33,7 @@ body {
     padding: 0 20px;
     display: flex;
     z-index: 2;
+    overflow: hidden;
 }
 .group{
     display: flex;
@@ -41,6 +42,7 @@ body {
     
 }
 .a{
+    width: auto;
     display: flex;
     gap: 15px;
     margin-left: 100px;
@@ -61,6 +63,7 @@ a .icon{
     margin-right: 8px;
 }
 .b{
+    width: auto;
     display: flex;
     gap: 15px;
     margin-left: 400px;
@@ -201,6 +204,8 @@ h1 {
     color: #333;
     padding: 40px 20px;
     text-align: center;
+    z-index: 3;
+    width: 100%;
 }
 
 .footer-logo {
@@ -358,6 +363,7 @@ h1 {
 .tieude{
     top: 200px;
     position: relative;
+    overflow: hidden;
     
 }
 h2{
@@ -369,9 +375,13 @@ h2{
 .movie-container {
     top: 40px;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     width: 100%;
-    height: 504.04px;
+    height: auto;
+    
+}
+.list1{
+    overflow: hidden;
 }
 .movie-list {
     display: flex;
@@ -385,6 +395,25 @@ h2{
 }
 .movie-list::-webkit-scrollbar {
     display: none;
+}
+.movie-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(29, 29, 29, 0.85);
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+    color: white;
+}
+
+.movie-card:hover .movie-info {
+    opacity: 1;
+    transform: translateY(0);
 }
 .movie-card {
     flex: 0 0 auto;
@@ -435,7 +464,7 @@ opacity: 1; /* Hiện ra khi di chuột vào nút */
 .slider-container {
     position: relative;
     display: flex;
-    top: 200px;
+    margin-top: 200px;
     flex-direction: column;
 }
 
