@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-----------------------------------------------------------------------Menu--------------------------------------------------------------------------------------->
+    <div class="container2"></div>
+    <div class="container">
+        <div class="group">
+            <div class="a">   
+            <a href=""><img src="" alt="logo"></a>
+            <a href="" class="text"><img class="icon" src ="image/icons8-home-30.png"></img><span>Trang chủ</span></a> 
+            <a href="" class="text"><img class="icon" src ="image/icons8-movie-30.png"></img><span>Kho phim</span></a>
+            <a href="" class="text"><img class="icon" src ="image/icons8-football-30.png"></img><span>Thể thao</span></a>
+            <a href="" class="text"><img class="icon" src ="image/icons8-babys-room-30.png"></img><span>Thiếu nhi</span></a>
+        </div>
+            </div>
+            <div class="b">
+                <span class="box-timkiem">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <img src="image/icons8-search-30.png" alt="Tìm kiếm" class="icontimkiem">
+                </span>
+            <span>
+            <img class="icon" src ="image/icons8-notification-30.png"></img>
+            </span>
+            <!-- <span>
+            <button class="button">Đăng ký</button>
+            </span> -->
+            <span>
+                <a href="">
+            <img class="icon" src ="image/icons8-user-30.png"></img>
+                </a>
+            </span>
+        </div>
+    </div>
+    <!-----------------------------------------------------------------------------------Banner-------------------------------------------------------------------------->
+    <div class="container1">
+        <div class="overlay">
+            <h1>Bước vào thế giới của những giấc mơ</h1>
+            <p>Khám phá những bí ẩn của tiềm thức với bộ phim nổi bật của chúng tôi</p>
+            <button class="watch-btn">Xem ngay</button>
+        </div>
+    </div>
+    <div class="review">
+        <div class="card">
+            <p class="category">ALL IN ONE PLACE</p>
+            <h3 class="title">Hướng dẫn phát trực tuyến hoàn chỉnh</h3>
+            <p class="description">Nhận đề xuất cá nhân cho tất cả các dịch vụ phát trực tuyến yêu thích của bạn. Chúng tôi sẽ chỉ cho bạn nơi xem phim, chương trình truyền hình và thể thao.</p>
+        </div>
+
+        <div class="card">
+            <p class="category">ONE SEARCH</p>
+            <h3 class="title">
+                Mọi nền tảng trong một tìm kiếm</h3>
+            <p class="description">Không bao giờ phải chuyển đổi giữa các dịch vụ phát trực tuyến để xem phim hoặc chương trình truyền hình có sẵn. Chúng tôi sẽ giúp bạn chỉ bằng một tìm kiếm</p>
+        </div>
+
+        <div class="card">
+            <p class="category">ONE WATCHLIST</p>
+            <h3 class="title">Kết hợp tất cả danh sách theo dõi của bạn
+            </h3>
+            <p class="description">Tạo một danh sách theo dõi duy nhất với mọi bộ phim và chương trình truyền hình bạn muốn xem – bao gồm mọi dịch vụ phát trực tuyến trong một danh sách trên mọi thiết bị của bạn.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------Movie-list----------------------------------------------------------------->
+<div class="tieude">
+    <div class="lis1">
+    <h2>Phim Thuê Đặc Sắc</h2>
+    <div class="movie-container">
+        <button class="nav-button nav-left" onclick="scrollLeftAction()">❮</button>
+        <div class="movie-list" id="movieList">
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Kraven"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Venom"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Cô Dâu Hào Môn"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Gia Tài Của Ngoại"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Bear Man"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Kraven"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Venom"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Cô Dâu Hào Môn"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Gia Tài Của Ngoại"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Bear Man"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Kraven"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Venom"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Cô Dâu Hào Môn"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Gia Tài Của Ngoại"></div>
+            <div class="movie-card"><img src="image/c025cd5ba8e5f7cb2cc592b95757ea8f3815a8702aaeb472c94d1ade5db4ad72.png" alt="Bear Man"></div>
+            </div>
+            <button class="nav-button nav-right" onclick="scrollRightAction()">❯</button>
+        </div>
+    </div>
+
+    <div class="list2">
+        <div class="slider-container">
+            <h2>Top Series Hôm Nay</h2>
+            <div class="slider">
+                <div class="slide">
+                    <div class="movie2">
+                        <span class="number">1</span>
+                        <div class="image-container">
+                            <img src="image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Hùng Long Phong Bá">
+                            <div class="overlay">
+                                <h3>Hùng Long Phong Bá</h3>
+                                <p>Hành động - 120 phút</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="movie2">
+                        <span class="number">2</span>
+                        <div class="image-container">
+                            <img src="image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Hậu Cung Chân Hoàn Truyện">
+                            <div class="overlay">
+                                <h3>Hậu Cung Chân Hoàn Truyện</h3>
+                                <p>Cổ trang - 76 tập</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="movie2">
+                        <span class="number">3</span>
+                        <div class="image-container">
+                            <img src="image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Thương Vụ Bạc Tỷ">
+                            <div class="overlay">
+                                <h3>Thương Vụ Bạc Tỷ</h3>
+                                <p>Kinh doanh - 45 tập</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="movie2">
+                        <span class="number">4</span>
+                        <div class="image-container">
+                            <img src="image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Mất Tích Đêm 30">
+                            <div class="overlay">
+                                <h3>Mất Tích Đêm 30</h3>
+                                <p>Trinh thám - 30 tập</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="list3">
+        <div class="slider-container2">
+            <h2>Hành Động Hollywood</h2>
+        </div>
+    <div class="list3">
+        <div class="slider-container3">
+            <button class="button left" onclick="scrollLeftAction()">❮</button>
+            <div class="slider3" id="slider">
+                <div class="slide3" >
+                    <div class="movie3">
+                        <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                        <div class="movie-info3">
+                            <h3>Tên Phim 1</h3>
+                            <p>Hành động - 120 phút</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="movie3">
+                        <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 2">
+                        <div class="movie-info3">
+                         <h3>Tên Phim 2</h3>
+                            <p>Hài hước - 90 phút</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide3">
+                <div class="movie3">
+                    <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 3">
+                    <div class="movie-info3">
+                        <h3>Tên Phim 3</h3>
+                        <p>Kinh dị - 110 phút</p>
+                    </div>
+                </div>
+                </div>
+                <div class="slide3">
+                <div class="movie3">
+                    <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                    <div class="movie-info3">
+                        <h3>Tên Phim 1</h3>
+                        <p>Hành động - 120 phút</p>
+                    </div>
+                </div>
+                </div>
+                <div class="slide3">
+                <div class="movie3">
+                    <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                    <div class="movie-info3">
+                        <h3>Tên Phim 1</h3>
+                        <p>Hành động - 120 phút</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide3">
+                <div class="movie3">
+                    <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                    <div class="movie-info3">
+                        <h3>Tên Phim 1</h3>
+                        <p>Hành động - 120 phút</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide3">
+                <div class="movie3">
+                    <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                    <div class="movie-info3">
+                        <h3>Tên Phim 1</h3>
+                        <p>Hành động - 120 phút</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide3">
+                <div class="movie3">
+                    <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                    <div class="movie-info3">
+                        <h3>Tên Phim 1</h3>
+                        <p>Hành động - 120 phút</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide3">
+                <div class="movie3">
+                    <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                    <div class="movie-info3">
+                        <h3>Tên Phim 1</h3>
+                        <p>Hành động - 120 phút</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="button right" onclick="scrollRightAction()">❯</button>
+    </div>
+    </div>
+    <div class="list4">
+    <div class="slider-container2">
+        <h2>Phim Bộ Châu Á "Hot"</h2>
+    </div>
+    </div>
+    <div class="list3">
+    <div class="slider-container3">
+        <button class="button left" onclick="scrollLeftAction()">❮</button>
+        <div class="slider3" id="slider">
+            <div class="slide3" >
+                <div class="movie3">
+                    <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                    <div class="movie-info3">
+                        <h3>Tên Phim 1</h3>
+                        <p>Hành động - 120 phút</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide3">
+                <div class="movie3">
+                    <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 2">
+                    <div class="movie-info3">
+                     <h3>Tên Phim 2</h3>
+                        <p>Hài hước - 90 phút</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide3">
+            <div class="movie3">
+                <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 3">
+                <div class="movie-info3">
+                    <h3>Tên Phim 3</h3>
+                    <p>Kinh dị - 110 phút</p>
+                </div>
+            </div>
+            </div>
+            <div class="slide3">
+            <div class="movie3">
+                <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                <div class="movie-info3">
+                    <h3>Tên Phim 1</h3>
+                    <p>Hành động - 120 phút</p>
+                </div>
+            </div>
+            </div>
+            <div class="slide3">
+            <div class="movie3">
+                <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                <div class="movie-info3">
+                    <h3>Tên Phim 1</h3>
+                    <p>Hành động - 120 phút</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide3">
+            <div class="movie3">
+                <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                <div class="movie-info3">
+                    <h3>Tên Phim 1</h3>
+                    <p>Hành động - 120 phút</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide3">
+            <div class="movie3">
+                <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                <div class="movie-info3">
+                    <h3>Tên Phim 1</h3>
+                    <p>Hành động - 120 phút</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide3">
+            <div class="movie3">
+                <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                <div class="movie-info3">
+                    <h3>Tên Phim 1</h3>
+                    <p>Hành động - 120 phút</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide3">
+            <div class="movie3">
+                <img src="/image/thuong-vu-bac-ty_web_posterLandscape_4d3c4c189fefaa2dbc7ed776ae8a2ea5.webp" alt="Phim 1">
+                <div class="movie-info3">
+                    <h3>Tên Phim 1</h3>
+                    <p>Hành động - 120 phút</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="button right" onclick="scrollRightAction()">❯</button>
+    </div>
+</div>
+<!-----------------------------------------------------------------------------------intro --------------------------------------------------------------------->
+<div class="background">
+    <img src="/image/download.jpg" alt="Background" class="background-img">
+<div class="container3">
+    <div class="content">
+        <span class="wave">👋</span>
+        <h1>You saw it all!</h1>
+        <p>Didn't find something to watch yet? We got you. Try this option instead:</p>
+        <a href="" class="btn">Go to Movie Section</a>
+    </div>
+</div>
+ </div>
+   
+        <!-----------------------------------------------------------------------footer----------------------------------------------------------------------->
+    </div>
+    <footer class="footer">
+        <div class="footer-top">
+            <img src="logo.png" alt="Logo" class="footer-logo">
+            <h3>Subscribe to our newsletter</h3>
+            <div class="newsletter-box">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Input your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Product</h4>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <a href="#">Blog</a>
+                <a href="#">User guides</a>
+                <a href="#">Webinars</a>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+            </div>
+            <div class="footer-column">
+                <h4>Plans & Pricing</h4>
+                <a href="#">Personal</a>
+                <a href="#">Start up</a>
+                <a href="#">Organization</a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2024 Brand, Inc. • Privacy • Terms • Sitemap</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

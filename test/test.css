@@ -1,0 +1,83 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: hsl(0, 0%, 0%);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+   
+}
+.container3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Căn giữa chính xác */
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Emoji 👋 */
+.wave {
+    font-size: 40px;
+    display: inline-block;
+    animation: wave 1.5s infinite;
+}
+
+/* Hiệu ứng vẫy tay */
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+}
+
+/* Tiêu đề */
+.content h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Đoạn mô tả */
+.content p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Nút chuyển trang */
+.content .btn {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.content .btn:hover {
+    background: #666;
+}
+
+/* Ảnh nền */
+.background-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 1200px;
+    opacity: 0.3; /* Làm mờ ảnh */
+    transform: translate(-50%, -50%) rotate(-10deg); /* Nghiêng ảnh */
+    z-index: -1; /* Đưa ảnh ra sau */
+}
