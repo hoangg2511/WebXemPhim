@@ -392,6 +392,7 @@ h2{
     height: 504.04px;
     flex: auto;
     padding: 5px;
+    overflow: visible;
 }
 .movie-list::-webkit-scrollbar {
     display: none;
@@ -441,7 +442,7 @@ border: none;
 cursor: pointer;
 width: 50px;
 height: 680px;
-z-index: 2;
+z-index: 4;
 color: rgb(255, 255, 255);
 opacity: 0; /* Ẩn mặc định */
 transition: opacity 0.3s;
@@ -730,12 +731,12 @@ opacity: 1; /* Hiện ra khi di chuột vào nút */
     top: 50%;
     left: 50%;
     width: 100%;
-    max-width: 1200px;
+
     opacity: 0.3; /* Làm mờ ảnh */
     transform: translate(-50%, -50%) rotate3d(1,0,0,20deg); /* Nghiêng ảnh */
     z-index: -1; /* Đưa ảnh ra sau */
 }
 .background{
-    top: 300px;
+    top: auto;
     position: relative;
 }
